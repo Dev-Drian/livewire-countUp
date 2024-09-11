@@ -1,0 +1,16 @@
+{
+    "name": "innovacion/animated_counter",
+    "description": "Pakete animated",
+    "autoload": {
+        "psr-4": {
+            "Innovacion\\AnimatedCounter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adrian Castro",
+            "email": "matiose12@gmail.com"
+        }
+    ],
+    "require": {}
+}
