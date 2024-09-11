@@ -4,8 +4,7 @@
     "type": "library",
     "require": {
         "laravel/framework": "^11.23",
-        "livewire/livewire": "^3.5",
-        "adrian_dev/animated_counter":"*"
+        "livewire/livewire": "^3.5"
     },
     "license": "DevDrian",
     "autoload": {
