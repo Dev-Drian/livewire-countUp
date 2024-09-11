@@ -1,7 +1,8 @@
 <?php
 
-namespace adrian_dev\AnimatedCounter\Http\Livewire;
+namespace AdrianDev\AnimatedCounter\Http\Livewire;
 
+use Livewire\Attributes\On;
 use Livewire\Component;
 
 class AnimatedCounter extends Component

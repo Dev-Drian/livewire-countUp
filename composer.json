@@ -1,38 +1,40 @@
 {
-    "name": "adrian_dev/animated_counter",
-    "description": "Count animated",
-    "type": "library",
-    "require": {
-        "php": "^7.2|^7.3|^7.4|^8.0",
-        "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0",
-        "livewire/livewire": "^3.0"
-    },
-    "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "AdrianDev\\AnimatedCounter\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "AdrianDev\\AnimatedCounter\\AnimatedCounterServiceProvider"
-            ]
-        }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../Animated_counter"
-        }
-    ],
-    "authors": [
-        {
-            "name": "Adecas-Eg",
-            "email": "matiose12@gmail.com"
-        }
-    ]
+  "name": "adrian_dev/animated_counter",
+  "description": "Count animated",
+  "type": "library",
+  "require": {
+    "php": "^7.2|^7.3|^7.4|^8.0",
+    "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0",
+    "livewire/livewire": "^3.0"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "AdrianDev\\AnimatedCounter\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AdrianDev\\AnimatedCounter\\AnimatedCounterServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../Animated_counter"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Adecas-Eg",
+      "email": "matiose12@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
