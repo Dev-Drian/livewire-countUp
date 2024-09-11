@@ -3,7 +3,8 @@
     "description": "Count animated",
     "type": "library",
     "require": {
-        "laravel/framework": "^11.23",
+        "php": "^8.2",
+        "laravel/framework": "^10.0",
         "livewire/livewire": "^3.5"
     },
     "license": "DevDrian",
@@ -12,12 +13,18 @@
             "AdrianDev\\AnimatedCounter\\": "src/"
         }
     },
-    "repositories" : [
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdrianDev\\AnimatedCounter\\AnimatedCounterServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
         {
             "type": "path",
-            "url": "/"
+            "url": "../Animated_counter"
         }
-
     ],
     "authors": [
         {
