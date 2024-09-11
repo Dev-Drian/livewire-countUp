@@ -1,10 +1,10 @@
 <?php
 
-namespace TuNombre\AnimatedCounter;
+namespace adrian_dev\AnimatedCounter;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use TuNombre\AnimatedCounter\Http\Livewire\AnimatedCounter;
+use adrian_dev\AnimatedCounter\Http\Livewire\AnimatedCounter;
 
 class AnimatedCounterServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace TuNombre\AnimatedCounter\Http\Livewire;
+namespace adrian_dev\AnimatedCounter\Http\Livewire;
 
 use Livewire\Component;
 

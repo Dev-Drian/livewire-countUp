@@ -1,16 +1,29 @@
 {
-    "name": "innovacion/animated_counter",
-    "description": "Pakete animated",
+    "name": "adrian_dev/animated_counter",
+    "description": "Count animated",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^11.23",
+        "livewire/livewire": "^3.5",
+        "adrian_dev/animated_counter":"*"
+    },
+    "license": "DevDrian",
     "autoload": {
         "psr-4": {
-            "Innovacion\\AnimatedCounter\\": "src/"
+            "AdrianDev\\AnimatedCounter\\": "src/"
         }
     },
+    "repositories" : [
+        {
+            "type": "path",
+            "url": "/"
+        }
+
+    ],
     "authors": [
         {
-            "name": "Adrian Castro",
+            "name": "Adecas-Eg",
             "email": "matiose12@gmail.com"
         }
-    ],
-    "require": {}
+    ]
 }
