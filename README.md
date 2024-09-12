@@ -2,7 +2,8 @@ AnimatedCounter
 
 Descripción:
 
-El paquete AnimatedCounter es una solución para agregar un contador animado a tus aplicaciones web, desarrollado con Livewire y Alpine.js. Este paquete permite integrar un contador que incrementa su valor de manera animada, proporcionando una experiencia de usuario más dinámica y atractiva en tu aplicación Laravel.
+El paquete AnimatedCounter es una solución para agregar un contador animado a tus aplicaciones web, desarrollado con Livewire y Alpine.js. 
+Este paquete permite integrar un contador que incrementa su valor de manera animada, proporcionando una experiencia de usuario más dinámica y atractiva en tu aplicación Laravel.
 
 Características:
 
