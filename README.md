@@ -1,4 +1,4 @@
-nimatedCounter
+AnimatedCounter
 
 Descripción:
 
