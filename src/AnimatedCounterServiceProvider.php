@@ -15,10 +15,10 @@ class AnimatedCounterServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/resources/views', 'animated-counter');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'animated-counter');
 
         $this->publishes([
-            __DIR__ . '/resources/views' => resource_path('views/vendor/animated-counter'),
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/animated-counter'),
         ], 'animated-counter-views');
 
         Livewire::component('animated-counter', LivewireAnimatedCounter::class);
