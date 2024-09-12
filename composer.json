@@ -26,6 +26,12 @@
   "config": {
     "sort-packages": true
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/Adecas-Eg/Animate-Count"
+    }
+  ],
   "authors": [
     {
       "name": "Adecas-Eg",
