@@ -24,3 +24,15 @@ Para instalar el paquete, usa Composer:
 
 ```bash
 composer require adriandev/animated-counter
+Después de instalar el paquete, sigue estos pasos para completar la configuración:
+
+Publicar los activos del paquete (si es necesario):
+
+php artisan vendor:publish --provider="AdrianDev\AnimatedCounter\AnimatedCounterServiceProvider"
+
+Agregar el componente Livewire a tu vista Blade:
+
+<div>
+//target count  numero el cual aumenta 
+    <livewire:animated-counter :targetCount="100" />
+</div>
