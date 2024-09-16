@@ -1,5 +1,5 @@
 {
-  "name": "adrian_dev/animated_counter",
+  "name": "devdrian/livewire-countup",
   "description": "Count animated",
   "type": "library",
   "require": {
@@ -13,13 +13,13 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "AdrianDev\\AnimatedCounter\\": "src/"
+      "DevDrian\\AnimatedCounter\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "AdrianDev\\AnimatedCounter\\AnimatedCounterServiceProvider"
+        "DevDrian\\AnimatedCounter\\AnimatedCounterServiceProvider"
       ]
     }
   },
