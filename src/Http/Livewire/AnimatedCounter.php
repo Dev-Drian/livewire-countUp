@@ -16,6 +16,7 @@ class AnimatedCounter extends Component
     public function mount($targetCount = 100)
     {
         $this->count = 0;
+        
         $this->targetCount = $targetCount;
         $this->calculateStep();
     }
