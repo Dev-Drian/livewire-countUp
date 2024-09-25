@@ -1,6 +1,6 @@
 <?php
 
-namespace AdrianDev\AnimatedCounter\Http\Livewire;
+namespace DevDrian\AnimatedCounter\Http\Livewire;
 
 use Livewire\Attributes\On;
 use Livewire\Component;
