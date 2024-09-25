@@ -13,6 +13,8 @@
             let end = newValue;
             let duration = 1000; // 1 segundo
             let startTime = null;
+            let lastUpdate = 0;
+            let frameInterval = 50; // Solo actualizar cada 50ms (throttling)
             
             function animate(currentTime) {
                 if (startTime === null) startTime = currentTime;
@@ -20,7 +22,10 @@
                 let progress = timeElapsed / duration;
                 let currentValue = Math.round(start + (end - start) * progress);
                 
-                displayValue = currentValue.toLocaleString();
+                if (timeElapsed - lastUpdate >= frameInterval) {
+                    displayValue = currentValue.toLocaleString();
+                    lastUpdate = timeElapsed;
+                }
                 
                 if (progress < 1) {
                     requestAnimationFrame(animate);
