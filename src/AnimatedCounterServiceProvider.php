@@ -1,6 +1,6 @@
 <?php
 
-namespace AdrianDev\AnimatedCounter;
+namespace DevDrian\AnimatedCounter;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
