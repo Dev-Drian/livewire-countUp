@@ -13,13 +13,14 @@
             let end = newValue;
             let duration = 1000; // 1 segundo
             let startTime = null;
+            let maxUpdates = 60; // Limitar a 60 actualizaciones durante la duración
+            let frameInterval = duration / maxUpdates; // Intervalo de actualización basado en la duración
             let lastUpdate = 0;
-            let frameInterval = 50; // Solo actualizar cada 50ms (throttling)
             
             function animate(currentTime) {
                 if (startTime === null) startTime = currentTime;
                 let timeElapsed = currentTime - startTime;
-                let progress = timeElapsed / duration;
+                let progress = Math.min(timeElapsed / duration, 1); // Asegurar que el progreso no supere 1
                 let currentValue = Math.round(start + (end - start) * progress);
                 
                 if (timeElapsed - lastUpdate >= frameInterval) {
