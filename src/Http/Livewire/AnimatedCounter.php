@@ -3,11 +3,13 @@
 namespace DevDrian\AnimatedCounter\Http\Livewire;
 
 use Livewire\Attributes\On;
+use Livewire\Attributes\Reactive;
 use Livewire\Component;
 
 class AnimatedCounter extends Component
 {
     public $count = 0;
+    #[Reactive]
     public $targetCount;
     public $step;
     public $isComplete = false;
@@ -16,7 +18,7 @@ class AnimatedCounter extends Component
     public function mount($targetCount = 100)
     {
         $this->count = 0;
-        
+
         $this->targetCount = $targetCount;
         $this->calculateStep();
     }
@@ -24,7 +26,7 @@ class AnimatedCounter extends Component
     protected function calculateStep()
     {
         $difference = $this->targetCount - $this->count;
-        $steps = 20; // Aim for about 20 steps
+        $steps = 20;
         $this->step = max(1, ceil($difference / $steps));
     }
 
