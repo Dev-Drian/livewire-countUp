@@ -29,6 +29,14 @@ class AnimatedCounter extends Component
         $steps = 20;
         $this->step = max(1, ceil($difference / $steps));
     }
+    
+    public function updatedTargetCount($targetCount)
+    {
+        $this->count = 0;
+        $this->calculateStep();
+        $this->isComplete = false;
+        $this->dispatch('increment'); // Trigger initial increment
+    }
 
     #[On('increment')]
     public function increment()
