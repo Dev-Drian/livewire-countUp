@@ -2,6 +2,7 @@
 
 namespace DevDrian\AnimatedCounter\Http\Livewire;
 
+use Livewire\Attributes\Modelable;
 use Livewire\Attributes\On;
 use Livewire\Attributes\Reactive;
 use Livewire\Component;
@@ -9,34 +10,41 @@ use Livewire\Component;
 class AnimatedCounter extends Component
 {
     public $count = 0;
-    #[Reactive]
     public $targetCount;
     public $step;
     public $isComplete = false;
     public $animationDuration = 2000; // milliseconds
 
-    public function mount($targetCount = 100)
+      public function mount($targetCount = 100)
     {
-        $this->count = 0;
-
         $this->targetCount = $targetCount;
-        $this->calculateStep();
+        $this->resetAnimation();
     }
-
+    
     protected function calculateStep()
     {
         $difference = $this->targetCount - $this->count;
         $steps = 20;
         $this->step = max(1, ceil($difference / $steps));
     }
+
     
-    public function updatedTargetCount($targetCount)
+
+    public function updatedTargetCount()
+    {
+        $this->resetAnimation();
+    }
+
+
+    protected function resetAnimation()
     {
         $this->count = 0;
-        $this->calculateStep();
         $this->isComplete = false;
-        $this->dispatch('increment'); // Trigger initial increment
+        $this->calculateStep();
+        $this->dispatch('increment'); 
     }
+
+   
 
     #[On('increment')]
     public function increment()
