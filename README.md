@@ -44,7 +44,7 @@ Añade un contador que alcance un valor objetivo de forma animada:
 
 ```blade
 <div>
-    <livewire:countup :targetCount="500" />
+    <livewire:animated-counter :targetCount="500" />
 </div>
 ```
 
@@ -54,9 +54,9 @@ Para garantizar que el contador se actualice correctamente cuando cambien los da
 
 ```blade
 <div>
-    <livewire:countup 
+    <livewire:animated-counter 
         :targetCount="$totalCursos->count()" 
-        :key="'countup-counter-' . $totalCursos->count()" 
+        :key="'countup-counter-' . $cant" 
     />
 </div>
 ```
@@ -70,9 +70,9 @@ Integra fácilmente el contador en tus diseños estilizados:
 ```blade
 <div class="p-4 bg-gray-50 rounded-md shadow-md">
     <h3 class="text-lg font-bold text-blue-500">Total Cursos:</h3>
-    <livewire:countup 
+    <livewire:animated-counter
         :targetCount="$totalCursos->count()" 
-        :key="'styled-counter-' . $totalCursos->count()" 
+        :key="'styled-counter-' . $cant" 
         class="text-3xl font-semibold text-green-600"
     />
 </div>
